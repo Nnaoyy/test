@@ -1,0 +1,298 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  /* background: black; */
+}
+
+.question {
+  margin: 0 50px;
+}
+
+.choix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 40px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4.2em;
+  text-align: center;
+  margin: 0;
+  color: cyan;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.counter {
+  text-align: center;
+  font-size: 30px;
+}
+
+label {
+  font-size: 50px;
+  border: 4px solid black;
+  border-radius: 30px;
+  padding: 0 30px;
+  background: rgba(255, 255, 255, 0.849);
+  color: #392989;
+  /* box-shadow: -3px 5px black; */
+  display: flex;
+  height: 120px;
+  max-width: 720px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* label:hover {
+  color: yellow;
+  border: 4px solid yellow;
+  box-shadow: none;
+} */
+
+label span {
+  padding-left: 10px;
+}
+
+.answer {
+  text-align: center;
+  height: 50px;
+}
+
+/* .input:checked+label {
+  border: 4px solid orange;
+  color: orange;
+} */
+
+.button button {
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+#testAnswer {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+#nextQcm,
+#buttonAnswerTest,
+#testAnswer,
+#nextIntrus,
+#backTheme,
+#buttonAnswerQcm {
+  display: none;
+}
+
+.choixIntrus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+  margin: 40px;
+}
+
+.propsIntrus {
+  font-size: 50px;
+  border: 2px solid black;
+}
+
+img {
+  max-width: 650px;
+  max-height: 500px;
+}
+
+.blockImg {
+  height: 500px;
+  align-content: center;
+}
+
+.blockImgQuest {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.blockImgQuest img {
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.ruleA,
+.ruleB {
+  display: flex;
+  justify-content: center;
+}
+
+.ruleA label,
+.ruleB label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 700px;
+}
+
+#nbrA,
+#nbrB {
+  display: none;
+}
+
+.accueilBoutton {
+  font-size: 25px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  background-color: #392989;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.menu a {
+  font-size: 60px;
+  padding: 20px 100px;
+  background-color: black;
+  color: lightgray;
+  text-decoration: none;
+  margin: 80px;
+  text-align: center;
+}
+
+label p {
+  margin: 0;
+}
+
+#buttonAnswerTest {
+  font-size: 60px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: yellow;
+  background-color: grey;
+  cursor: pointer;
+  border: 4px solid grey;
+}
+
+#buttonAnswerTest:hover {
+  border: 4px dotted red;
+}
+
+#buttonNsfw {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#themeQuestion {
+  background: #392989;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+}
+
+#theme {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #392989;
+  flex-direction: column;
+}
+
+#theme a {
+  color: white;
+  text-decoration: none;
+  border: 4px solid rgba(255, 0, 0, 0.603);
+  padding: 4px 30px;
+  font-size: 50px;
+}
+
+#header {
+  background-color: black;
+}
+
+#qcm,
+#imgQuestion {
+  height: 100%;
+  background-color: #392989;
+  color: white;
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.imgchoix {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgchoix label {
+  width: 300px;
+}
+
+#avis {
+  display: none;
+  position: absolute;
+  top: 20%;
+  background-color: lightgray;
+  padding: 30px;
+  font-size: 30px;
+  border: 2px solid black;
+  margin: 0 100px;
+  width: -webkit-fill-available;
+  text-align: center;
+  color: #392989;
+}
+
+#testQcm {
+  display: flex;
+  justify-content: center;
+}
+
+#testQcm .question {
+  width: -webkit-fill-available;
+}
