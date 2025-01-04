@@ -1,13 +1,13 @@
 import { RuleFooter } from "../componants/rule/RuleFooter";
 import { RuleQuest } from "../componants/rule/RuleQuest";
-import { questionsRule } from "../data/dataRule";
+//import { questionsRule } from "../data/dataRule";
 
-export function Rules34( ) {
+export function Rules34() {
 
-    return (
-      <>
+  return (
+    <>
       <RuleQuest />
-      <RuleFooter question={questionsRule}/>
-      </>
-    )
+      <RuleFooter question={questionsRule} />
+    </>
+  )
 }
