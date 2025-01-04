@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { QCM } from "./pages/QCM";
 import { Intrus } from "./pages/Intrus";
 import { Rules34 } from "./pages/Rules34";
-import { Test } from "./pages/test";
+import { Test } from "./pages/Test";
 import { QCMT } from "./pages/QCMT";
 import { QCMTQuest } from "./componants/qcmt/QCMTQuest";
 import { ImgQuest } from "./componants/image/ImgQuest";
